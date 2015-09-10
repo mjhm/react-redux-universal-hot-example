@@ -42,6 +42,7 @@ export default class Html extends Component {
         <body>
           <div id="content" dangerouslySetInnerHTML={{__html: React.renderToString(component)}}/>
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} />
+          <script src={assets.javascript.vendor}/>
           <script src={assets.javascript.main}/>
         </body>
       </html>

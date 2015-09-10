@@ -5,10 +5,10 @@ module.exports = function (config) {
 
     browsers: [ process.env.CONTINUOUS_INTEGRATION ? 'Firefox' : 'Chrome' ],
 
-    singleRun: true,
+    singleRun: false,
 
     frameworks: [ 'mocha' ],
-  
+
     files: [
       'tests.webpack.js'
     ],

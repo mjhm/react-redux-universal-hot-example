@@ -43,6 +43,7 @@ describe('InfoBar', () => {
   });
 
   it('should render the correct className', () => {
+    console.log('HERE YALL');
     const styles = require('../InfoBar.scss');
     expect(styles.infoBar).to.be.a('string');
     expect(dom.className).to.include(styles.infoBar);
